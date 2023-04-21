@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Image Carousel</title>
+</head>
+<body>
+    <header>
+        <img src="images/logofrog2.png" alt="">
+        <h2>Random Slide Show</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fade">
+                    <img src="images/rand1.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand2.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand3.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand4.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand5.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand6.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand7.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand8.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand9.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand10.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand11.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand12.jpg" alt="Frog">
+                </div>
+                <div class="image fade">
+                    <img src="images/rand13.jpg" alt="Frog">
+                </div>
+            
+                <div class="next"><i onclick="showImage(1)" class="fa-solid fa-chevron-right"></i></div>
+                <div class="prev"><i onclick="showImage(-1)" class="fa-solid fa-chevron-left"></i></div>
+            </div>
+
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Nathan Innerfield</p>
+    </footer>
+
+    <script src="js/imagecarousel.js"></script>
+</body>
+</html>

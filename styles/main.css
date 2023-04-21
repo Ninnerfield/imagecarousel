@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(22, 21, 21);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+}
+header {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    padding: 2vh;
+}
+header h2 {
+    font-size: 200%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagecarousel {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+.image {
+    display: none;
+    max-width: 800px;
+    width: 100%;
+}
+.imagecarousel img {
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 0 rgba(230, 92, 92, 0.75);
+}
+
+.dots {
+    text-align: center;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dot {
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.prev, .next {
+    position: absolute;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    top: 50%;
+    background-color: rgba(186, 186, 186, 0.5);
+    transition: all ease 300ms;
+}
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.next i, .prev i {
+    padding: 1vw;
+    cursor: pointer;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(186, 186, 186, 0.9);
+}
+.active {
+    background-color: rgb(131, 130, 130);
+}
+.fade {
+    animation: fade 1.5s;
+}
+footer {
+    padding: 2vh 0;
+    background-color: gray;
+    color: whitesmoke;
+    font-size: 90%;
+    font-weight: bold;
+    font-variant: small-caps;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+    html, body, .image, .container, .imagecarousel {
+        width: 100%;
+    }
+    .dots {
+        display: none;
+    }
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
